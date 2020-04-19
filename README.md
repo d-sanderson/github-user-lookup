@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). and comes pre-configured with [Tailwind](https://tailwindcss.com/), [Emotion](https://emotion.sh/docs/introduction), [Prettier](https://prettier.io/), and [Husky](https://www.npmjs.com/package/husky)
 
 ## Available Scripts
 
