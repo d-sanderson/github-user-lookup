@@ -39,6 +39,14 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-emotion": "^10.0.33"
+    "babel-plugin-emotion": "^10.0.33",
+    "husky": "^4.2.5",
+    "prettier": "2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
