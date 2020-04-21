@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png" alt="Emotion CSS-in-JS" width="112">
  +
- <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/tailwing.svg" alt="TailwindCSS" width="112">
+ <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/tailwind.svg" alt="TailwindCSS" width="112">
 
 ## Available Scripts
 
