@@ -1,8 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and comes pre-configured with [Tailwind](https://tailwindcss.com/), [Emotion](https://emotion.sh/docs/introduction), [Prettier](https://prettier.io/), and [Husky](https://www.npmjs.com/package/husky)
 
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Femotion-js%2Femotion&psig=AOvVaw3NjfRrmioi4YLYBGnaPWnt&ust=1587519251807000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDDgpuw-OgCFQAAAAAdAAAAABADg "Emotion CSS-in-JS")
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn format or npm format`
+
+Runs prettier on projects
 
 ### `yarn start`
 
