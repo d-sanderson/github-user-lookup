@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and comes pre-configured with [Tailwind](https://tailwindcss.com/), [Emotion](https://emotion.sh/docs/introduction), [Prettier](https://prettier.io/), and [Husky](https://www.npmjs.com/package/husky)
 
 
-<img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png" alt="Emotion CSS-in-JS" width="56">
+<img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png" alt="Emotion CSS-in-JS" width="112">
  +
- <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png" alt="TailwindCSS" width="56">
+ <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/tailwing.svg" alt="TailwindCSS" width="112">
 
 ## Available Scripts
 
