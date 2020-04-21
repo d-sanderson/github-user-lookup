@@ -12,7 +12,6 @@ In the project directory, you can run:
 
 Run project files through prettier 
 
-Runs prettier on projects
 
 ### `yarn start`
 
