@@ -4,6 +4,8 @@ Emotion CSS-in-JS             |  Tailwind CSS
 ![](https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png)  |  <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/tailwind.svg"  width="350px" viewBox="0 0 350 350"/>
 
 
+#Note: Before each push husky runs a precommit hook thatformats that project through prettier
+
 ## Available Scripts
 
 In the project directory, you can run:
