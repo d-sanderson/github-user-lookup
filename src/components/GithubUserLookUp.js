@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSearchGithubUser } from "../hooks/debounce";
 import GithubUserCard from "./GithubUserCard";
 import { css } from "@emotion/core";
 const GithubUserLookUp = () => {
+  const [seeJson, setSeeJson] = useState(false);
   const { inputText, setInputText, search } = useSearchGithubUser();
   return (
     <>

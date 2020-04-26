@@ -8,7 +8,9 @@ function App() {
   // Nav Bar component
   return (
     <>
-      <GithubUserLookUp />
+      <div>
+        <GithubUserLookUp />
+      </div>
     </>
   );
 }
