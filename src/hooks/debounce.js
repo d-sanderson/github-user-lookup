@@ -6,7 +6,6 @@ import AwesomeDebouncePromise from "awesome-debounce-promise";
 
 const searchGithubUser = async (text, abortSignal) => {
   const url = `https://api.github.com/users/${text}`;
-  console.log(url);
   const result = await fetch(url, {
     signal: abortSignal,
   });
