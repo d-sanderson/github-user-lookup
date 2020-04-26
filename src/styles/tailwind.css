@@ -637,6 +637,22 @@ video {
   }
 }
 
+.badge {
+  margin: 0.5rem;
+  background-color: #667eea;
+  color: #fff;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  display: inline-block;
+}
+
 /* purgecss end ignore */
 
 .sr-only {

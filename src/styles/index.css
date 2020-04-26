@@ -2,6 +2,10 @@
 @tailwind base;
 
 @tailwind components;
+
+.badge {
+  @apply m-2 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide inline-block;
+}
 /* purgecss end ignore */
 
 @tailwind utilities;

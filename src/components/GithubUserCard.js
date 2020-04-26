@@ -14,7 +14,7 @@ const GithubUserCard = ({ result }) => {
     ""
   );
   return (
-    <div className="md:flex justify-center items-center">
+    <div className="md:flex justify-center items-center ">
       <div className="md:flex-shrink-0">
         <img
           src={result?.avatar_url || placeholderImg}
@@ -44,27 +44,45 @@ const GithubUserCard = ({ result }) => {
           Last Active: {last_updated}
         </p>
         <div className="flex">
-          <span className="m-2 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide inline-block ">
-            <a href="#">
+          <span className="badge">
+            <a
+              href={`${result?.html_url}?tab=repositories`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <CountUp end={result?.public_repos || 0} /> public repos
             </a>
           </span>
-          <span className="m-2 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide inline-block ">
-            <a href="#">
+          <span className="badge">
+            <a
+              href={`${result?.html_url}?tab=followers`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <CountUp end={result?.followers || 0} /> followers
             </a>
-            <a href="#"> stars</a>
           </span>
-          <span className="m-2 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide inline-block ">
-            <a href="#">
+          <span className="badge">
+            <a
+              href={`${result?.html_url}?tab=following`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <CountUp end={result?.following || 0} /> following
             </a>
           </span>
-          <span className="m-2 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide inline-block ">
-            <a href="#"> stars</a>
+          <span className="badge">
+            <a
+              href={`${result?.html_url}?tab=stars`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              stars
+            </a>
           </span>
         </div>
       </div>
