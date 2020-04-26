@@ -1,8 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and comes pre-configured with [Tailwind](https://tailwindcss.com/), [Emotion](https://emotion.sh/docs/introduction), [Prettier](https://prettier.io/), and [Husky](https://www.npmjs.com/package/husky)
-Emotion CSS-in-JS             |  Tailwind CSS
+Emotion CSS-in-JS | Tailwind CSS
 :-------------------------:|:-------------------------:
-![](https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png)  |  <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/tailwind.svg"  width="350px" viewBox="0 0 350 350"/>
-
+![](https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/emotion.png) | <img src="https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier/blob/master/src/assets/tailwind.svg"  width="350px" viewBox="0 0 350 350"/>
 
 #Note: Before each commit husky runs a precommit hook that formats the project through prettier.
 
@@ -12,8 +11,7 @@ In the project directory, you can run:
 
 ### `yarn format or npm format`
 
-Run project files through prettier 
-
+Run project files through prettier
 
 ### `yarn start`
 
@@ -43,5 +41,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-
