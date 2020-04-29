@@ -3,7 +3,8 @@ import React, { useState } from "react";
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import GithubUserLookUp from "./components/GithubUserLookUp";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 function App() {
   // Nav Bar component
   const [count, setCount] = useState([1]);
@@ -23,7 +24,7 @@ function App() {
             `}
             className="badge hover:border hover:bg-white hover:text-indigo-600"
           >
-            New Search
+            <FontAwesomeIcon icon={faGithubAlt} /> New Search
           </button>
         </div>
       </div>
