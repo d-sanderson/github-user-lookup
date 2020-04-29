@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSearchGithubUser } from "../hooks/debounce";
 import GithubUserCard from "./GithubUserCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import jsonIcon from "../assets/json2.png";
 import {
   faPlusSquare,
   faMinusSquare,
@@ -33,6 +34,23 @@ const GithubUserLookUp = () => {
     <>
       <div className="flex justify-center items-center flex-col mx-4">
         <GithubUserCard result={search.result} />
+        {search.loading && (
+          <FontAwesomeIcon className="ml-5 mt-3" icon={faGithubAlt} />
+        )}
+        {search.error && (
+          <div className="text-red-900">
+            <FontAwesomeIcon className="ml-5 mt-3" icon={faGithubAlt} />{" "}
+            <strong>Error:</strong> user not found. Please Try again
+          </div>
+        )}
+        {search.result?.login && search.status === "success" ? (
+          <div className="text-green-400">
+            <FontAwesomeIcon className="ml-5 mt-3" icon={faGithubAlt} /> User{" "}
+            <span className="font-bold">{search.result.login}</span> found!
+          </div>
+        ) : (
+          ""
+        )}
         <div className="flex">
           <input
             value={inputText}
@@ -40,20 +58,19 @@ const GithubUserLookUp = () => {
             placeholder="Enter a github username"
             onChange={(e) => setInputText(e.target.value)}
           />
-          {search.loading && (
-            <FontAwesomeIcon className="ml-5 mt-3" icon={faGithubAlt} />
-          )}
         </div>
-        <span onClick={() => setShowJson(!showJson)}>
-          {showJson ? (
-            <FontAwesomeIcon icon={faMinusSquare} />
-          ) : (
-            <FontAwesomeIcon icon={faPlusSquare} />
-          )}
-        </span>
+        <div className="flex flew-row">
+          <img src={jsonIcon} className="w-6" alt="json icon" />
+          <span onClick={() => setShowJson(!showJson)}>
+            {showJson ? (
+              <FontAwesomeIcon className="ml-3" icon={faMinusSquare} />
+            ) : (
+              <FontAwesomeIcon className="ml-3" icon={faPlusSquare} />
+            )}
+          </span>
+        </div>
         {showJson && <pre>{JSON.stringify(search.result, undefined, 2)}</pre>}
       </div>
-      <pre>{JSON.stringify(search, undefined, 2)}</pre>
     </>
   );
 };
