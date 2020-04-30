@@ -9,7 +9,7 @@ function App() {
   // Nav Bar component
   const [count, setCount] = useState([1]);
   const addComponent = () => setCount([...count, 1]);
-  let lookups = count.map((el) => <GithubUserLookUp />);
+  let lookups = count.map((el, i) => <GithubUserLookUp key={i} />);
   return (
     <>
       <div className="flex flex-col">

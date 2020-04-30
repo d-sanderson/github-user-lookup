@@ -3,13 +3,11 @@ import CountUp from "react-countup";
 import { useSearchGithubUserStarred } from "../hooks/debounce";
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import placeholderImg from "../assets/octokitteh.jpeg";
+import placeholderImg from "../assets/silhouette.jpg";
 import Moment from "react-moment";
 import Star from "./Star";
 
-const PlaceHolder = () => (
-  <div className="m-2 lg:w-full w-3/4 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide inline-block"></div>
-);
+const PlaceHolder = () => <>00/00/00</>;
 const GithubUserCard = ({ result }) => {
   const user_since = result?.created_at ? (
     <Moment format="MM/DD/YYYY" date={result?.created_at} />
@@ -32,11 +30,11 @@ const GithubUserCard = ({ result }) => {
       </div>
       <div className="mt-4 md:mt-0 md:ml-6 w-full">
         <div className="block mt-1 text-lg leading-tight font-bold text-gray-900 text-2xl">
-          {result?.name}
+          {result?.name || "username"}
         </div>
         <div className="lowercase tracking-wide text-sm text-indigo-600 font-bold text-xl">
           <a href={result?.html_url} target="_blank" rel="noopener noreferrer">
-            {result?.login}
+            {result?.login || "login"}
           </a>
         </div>
         <div className="lowercase tracking-wide text-sm text-indigo-600 font-bold">

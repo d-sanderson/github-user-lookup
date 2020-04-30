@@ -10,30 +10,30 @@ import JsonWidget from "./JsonWidget";
 const GithubUserLookUp = () => {
   const [stars, setStars] = useState("hi");
   const { inputText, setInputText, search } = useSearchGithubUser();
-  useEffect(() => {
-    const searchGithubUserStarred = async (text, abortSignal) => {
-      const url = `https://api.github.com/users/${text}/starred`;
-      const result = await fetch(url, {
-        signal: abortSignal,
-      });
-      if (result.status !== 200) {
-        throw new Error("bad status = " + result.status);
-      }
-      console.log(result);
-      setStars(result.json());
-    };
-    searchGithubUserStarred(search.result?.login);
-  }, [inputText]);
+  // useEffect(() => {
+  //   const searchGithubUserStarred = async (text, abortSignal) => {
+  //     const url = `https://api.github.com/users/${text}/starred`;
+  //     const result = await fetch(url, {
+  //       signal: abortSignal,
+  //     });
+  //     if (result.status !== 200) {
+  //       throw new Error("bad status = " + result.status);
+  //     }
+  //     console.log(result);
+  //     setStars(result.json());
+  //   };
+  //   searchGithubUserStarred(search.result?.login);
+  // }, [inputText]);
 
   return (
     <>
       <div className="flex justify-center items-center flex-col mx-4">
         <GithubUserCard result={search.result} />
         {search.loading && (
-          <>
+          <div>
             <FontAwesomeIcon className="ml-5 mt-3" icon={faGithubAlt} />
-            ...Searching for user
-          </>
+            &nbsp;...Searching for user
+          </div>
         )}
         {search.error && (
           <div className="text-red-900">
@@ -49,10 +49,10 @@ const GithubUserLookUp = () => {
         ) : (
           ""
         )}
-        <div className="flex">
+        <div className="flex flex-row">
           <input
             value={inputText}
-            className="justify-end my-2 font-bold border rounded"
+            className="my-2 font-bold border rounded"
             placeholder="Enter a github username"
             onChange={(e) => setInputText(e.target.value)}
           />
